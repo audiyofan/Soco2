@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0
-%%Title: XC26954.sy4zlY
+%%Title: test.ps
 %%Creator: XCircuit v3.7 rev26
-%%CreationDate: Wed Oct 17 05:08:44 2012
+%%CreationDate: Sat Dec 22 14:51:00 2012
 %%Pages: 1
 %%BoundingBox: 0 0 612 792
 %%DocumentNeededResources: font Helvetica Helvetica-Bold Times-Roman Times-Bold 
@@ -369,6 +369,22 @@ begingate
 endgate
 } def
 
+/analog::nmos {
+begingate
+1 1.000 0 -64 0 -28 -32 -28 -32 28 0 28 0 64 6 polygon
+1 1.000 -44 -28 -44 28 2 polygon
+1 1.000 -44 0 -64 0 2 polygon
+1.000 0.000 0.000 scb
+(G) {/Times-Roman cf} 2 7 0 1.000 -64 0 pinlabel
+(S) {/Times-Roman cf} 2 13 0 1.000 0 -64 pinlabel
+(D) {/Times-Roman cf} 2 9 0 1.000 0 64 pinlabel
+0.180 0.545 0.341 scb
+(spice:M%i %pD %pG %pS GND nmos) {/Times-Roman cf} 2 4 0 1.000 -244 -139 
+infolabel
+(sim:n %pG %pS %pD) {/Times-Roman cf} 2 4 0 1.000 -244 -187 infolabel
+endgate
+} def
+
 
 %%EndSetup
 
@@ -389,7 +405,7 @@ endgate
 1 1.000 -288 432 -288 256 2 polygon
 1 1.000 -640 336 -640 384 -832 384 3 polygon
 1 1.000 -832 432 -832 256 2 polygon
-1.000 0 -1168 -208 euro::R
+1.000 0 -1104 -160 euro::R
 1 1.000 -288 592 -288 672 -832 672 -832 592 4 polygon
 1.000 270 -560 513 euro::in
 {/Helvetica cf} 1 16 0 1.000 -577 566 label
@@ -399,48 +415,27 @@ endgate
 (24k) {/Helvetica cf} 2 16 0 1.000 -256 514 label
 (24k) {/Helvetica cf} 2 16 0 1.000 -932 515 label
 0.000 0.000 0.000 scb
-1.000 0 -1168 -288 analog::gnd
-1 1.000 -1136 -48 -1328 -48 -1328 -160 3 polygon
-1.000 0 -1328 -208 euro::R
-1.000 0 -1328 -288 analog::gnd
+1.000 0 -1104 -336 analog::gnd
+1.000 0 -1296 -48 euro::R
 1 1.000 -320 -160 -320 -256 -800 -256 -800 -160 4 polygon
-1.000 45 -1328 -192 generic::arrow
-1 1.000 -1360 -224 -1472 -224 2 polygon
-1.000 0 -1472 -288 tubeamp::phone_jack
-1 1.000 -1472 -256 -1472 -224 2 polygon
-1 1.000 -1328 -288 -1440 -288 2 polygon
-(In) {/Helvetica cf} 2 16 0 1.000 -1536 -304 label
+1.000 270 -1248 -48 generic::arrow
+1 1.000 -1376 48 -1488 48 2 polygon
+1.000 0 -1488 -16 tubeamp::phone_jack
+1 1.000 -1488 16 -1488 48 2 polygon
+(In) {/Helvetica cf} 2 16 0 1.000 -1552 -32 label
 0.000 0.000 1.000 scb
 {/Helvetica cf} 1 16 0 1.000 -912 384 label
 {/Helvetica cf} 1 16 0 1.000 -896 384 label
 {/Helvetica cf} 1 16 0 1.000 -880 384 label
 0.000 0.000 0.000 scb
-224 1.000 -592 -592 -592 -768 -496 -768 -496 -592 4 polygon
 {/Helvetica cf} 1 16 0 1.000 -560 -304 label
-(out) {/Helvetica cf} 2 16 0 1.000 -560 -624 label
-(Gnd) {/Helvetica cf} 2 16 0 1.000 -592 -688 label
-(In) {/Helvetica cf} 2 16 0 1.000 -560 -752 label
-sce
-1.000 0 -480 -416 euro::R
-0.000 0.000 0.000 scb
-1 1.000 -528 -592 -528 -496 2 polygon
-1 1.000 -528 -336 -528 -256 2 polygon
-225 1.000 -592 -672 -704 -672 -704 -256 3 polygon
 sce
 -1.000 270 -528 -895 euro::in
-0.000 0.000 0.000 scb
-1 1.000 -528 -864 -528 -768 2 polygon
-sce
 1 1.000 -32 256 -288 256 2 polygon
 0.000 0.000 0.000 scb
 {/Helvetica cf} 1 16 0 1.000 192 144 label
 {/Helvetica cf} 1 16 0 1.000 368 80 label
 {/Helvetica cf} 1 16 0 1.000 368 80 label
-sce
-1.000 0 -576 -416 euro::R
-0.000 0.000 0.000 scb
-1 1.000 -480 -336 -576 -336 2 polygon
-1 1.000 -480 -496 -576 -496 2 polygon
 0.000 0.000 1.000 scb
 (+195v) {/Helvetica cf} 2 16 0 1.000 -272 272 label
 0.000 0.000 0.000 scb
@@ -466,11 +461,7 @@ sce
 1.000 0 -288 384 generic::dot
 1.000 0 -288 256 generic::dot
 1.000 0 -528 -256 generic::dot
-1.000 0 -704 -256 generic::dot
 1.000 0 -560 282 generic::dot
-1.000 0 -528 -336 generic::dot
-1.000 0 -528 -496 generic::dot
-1.000 0 -527 -494 generic::dot
 1.000 0 -557 671 generic::dot
 1.000 0 1008 -81 euro::R
 0.000 0.000 0.000 scb
@@ -559,14 +550,12 @@ sce
 (3W) {/Helvetica cf} 2 16 0 1.000 -256 464 label
 {/Helvetica cf} 1 16 0 1.000 -928 480 label
 (3W) {/Helvetica cf} 2 16 0 1.000 -928 464 label
-(LM7905) {/Times-Roman cf} 2 16 0 1.000 -480 -688 label
 (630v) {/Helvetica cf} 2 16 0 1.000 512 368 label
 (630v) {/Helvetica cf} 2 16 0 1.000 511 -817 label
 1 1.000 1456 -209 1392 -209 2 polygon
 {/Helvetica cf} 1 16 0 1.000 1136 144 label
 (0,5W) {/Helvetica cf} 2 16 0 1.000 880 -112 label
-(SOCO2 - PP 6S19P / 6Z38P) {/Times-Bold cf} 2 16 0 1.000 1696 -976 label
-1 1.000 2208 -992 1696 -992 2 polygon
+(SOCO2 - PP 6S19P / 6Z38P) {/Times-Bold cf} 2 16 0 2.000 1648 -1472 label
 {/Times-Roman cf} 1 16 0 1.000 2208 816 label
 {/Times-Roman cf} 1 16 0 1.000 2208 880 label
 {/Times-Roman cf} 1 16 0 1.000 2208 752 label
@@ -575,7 +564,6 @@ sce
 {/Times-Roman cf} 1 16 0 1.000 2480 944 label
 {/Times-Roman cf} 1 16 0 1.000 2208 944 label
 {/Times-Roman cf} 1 16 0 1.000 2224 928 label
-(Puissance max. : 10Wrms) {/Times-Roman cf} 2 16 0 1.000 1696 -1056 label
 {/Courier cf} 1 16 0 1.000 2192 560 label
 {/Courier cf} 1 16 0 1.000 2176 560 label
 sce
@@ -592,8 +580,6 @@ sce
 1 1.000 -832 128 -832 256 2 polygon
 (200) {/Helvetica cf} 2 16 0 1.000 -736 112 label
 (200) {/Helvetica cf} 2 16 0 1.000 -448 112 label
-(820) {/Helvetica cf} 2 16 0 1.000 -448 -416 label
-(820) {/Helvetica cf} 2 16 0 1.000 -672 -416 label
 0.000 0.000 0.000 scb
 1.000 90 1087 -208 analog::diode
 1 1.000 1105 -227 1116 -236 2 polygon
@@ -636,8 +622,8 @@ sce
 1 1.000 544 -464 544 -208 2 polygon
 1 1.000 688 -448 688 -208 2 polygon
 1 1.000 688 -576 688 -720 2 polygon
-(200v) {/Helvetica cf} 2 16 0 1.000 432 0 label
-(200v) {/Helvetica cf} 2 16 0 1.000 432 -480 label
+(250v) {/Helvetica cf} 2 16 0 1.000 432 0 label
+(250v) {/Helvetica cf} 2 16 0 1.000 432 -480 label
 0.000 0.000 0.000 scb
 (MJE340) {/Times-Roman cf} 2 16 0 1.000 864 80 label
 (MJE340) {/Times-Roman cf} 2 16 0 1.000 864 -528 label
@@ -665,51 +651,62 @@ sce
 1 1.000 960 304 544 304 544 144 3 polygon
 1 1.000 688 32 688 -208 2 polygon
 1 1.000 688 -208 512 -208 2 polygon
-1.000 0 -1328 -288 generic::dot
+1.000 0 -1104 -48 generic::dot
 1.000 0 64 -192 euro::R
 0.000 0.000 0.000 scb
 1.000 0 64 -272 analog::gnd
 (10k) {/Helvetica cf} 2 16 0 1.000 96 -192 label
-(220k) {/Helvetica cf} 2 16 0 1.000 -1136 -208 label
+(220k) {/Helvetica cf} 2 16 0 1.000 -1072 -176 label
 sce
 {/Helvetica cf} 1 16 0 1.000 2224 -1200 label
 0.000 0.000 0.000 scb
 (630v) {/Helvetica cf} 2 16 0 1.000 1343 -385 label
 sce
-(200k) {/Helvetica cf} 2 16 0 1.000 -1296 -192 label
+(200k) {/Helvetica cf} 2 16 0 1.000 -1264 32 label
 {/Helvetica cf} 1 16 0 1.000 -1104 -288 label
-(log) {/Helvetica cf} 2 16 0 1.000 -1296 -240 label
+(log) {/Helvetica cf} 2 16 0 1.000 -1264 -16 label
 1.000 270 -1008 -48 euro::R
 1 1.000 -960 -48 -880 -48 -960 -48 3 polygon
-1 1.000 -1088 -48 -1152 -48 2 polygon
-1 1.000 -1168 -128 -1168 -48 2 polygon
 1.000 270 -112 -48 euro::R
 1 1.000 -240 -48 -192 -48 2 polygon
 1 1.000 -64 -48 64 -48 64 -128 3 polygon
 {/Helvetica cf} 1 16 0 1.000 -160 -16 label
 (1k) {/Helvetica cf} 2 16 0 1.000 -144 -16 label
 (1k) {/Helvetica cf} 2 16 0 1.000 -1024 -16 label
-(Some rights reserved. ) {/Times-Roman cf} 2 16 0 1.000 1680 -1216 label
+(Some rights reserved. ) {/Times-Roman cf} 2 16 0 1.000 1648 -1568 label
 {/Times-Roman cf} 1 16 0 1.000 1680 -1248 label
 {/Times-Roman cf} 1 16 0 1.000 1760 -1264 label
-(Pentode Partition Noise Killer with mpsa42 is patented) {/Times-Roman cf} 2 16 
-0 1.000 1680 -1264 label
-(2009 - Franck Blohbaum.) {/Times-Roman cf} 2 16 0 1.000 1680 -1312 label
 {/Times-Roman cf} 1 16 0 1.000 1920 -1168 label
-(CCS with MJE340 in 6S19P's cathods is an idea of) {/Times-Roman cf} 2 16 0 
-1.000 1680 -1360 label
-(Yves Monmagnon) {/Times-Roman cf} 2 16 0 1.000 1680 -1408 label
-(This schematic is released under the CC-by-sa licence) {/Times-Roman cf} 2 16 
-0 1.000 1680 -1472 label
-(2011 - 2012 Gregoire HUBERT) {/Times-Roman cf} 2 16 0 1.000 1680 -1520 label
-(http://www.audiyofan.org) {/Times-Roman 0.800 cf} 2 16 0 1.000 2272 -1520 
-label
-(Many thanks to Pascal Benoist for his precious help.) {/Times-Roman cf} 2 16 0 
-1.000 1680 -1568 label
-0 1.000 1632 -896 1632 -1616 2672 -1616 2672 -896 4 polygon
-1 1.000 1632 -1120 2672 -1120 2 polygon
+1 1.000 1632 -1504 2672 -1504 2 polygon
 0 1.000 -1600 1024 -1600 -1696 2752 -1696 2752 1024 4 polygon
 0 1.000 -1664 1072 -1664 -1744 2800 -1744 2800 1072 4 polygon
+1 1.000 -1376 48 -1296 48 -1296 16 3 polygon
+1 1.000 -1296 -128 -1296 -288 2 polygon
+1 1.000 -1104 -336 -1104 -272 2 polygon
+1.000 0 -1104 -288 generic::dot
+1.000 0 -1296 -288 generic::dot
+1 1.000 -1456 -48 -1456 -288 -1104 -288 3 polygon
+1 1.000 -1088 -48 -1232 -48 2 polygon
+1 1.000 -1104 -48 -1104 -96 2 polygon
+1 1.000 -1104 -208 -1104 -288 2 polygon
+1.000 0 -528 -432 analog::nmos
+0.000 0.000 0.000 scb
+1.000 0 -528 -624 euro::R
+sce
+1 1.000 -592 -432 -656 -432 -656 -752 -528 -752 4 polygon
+1 1.000 -528 -688 -528 -864 2 polygon
+1 1.000 -528 -544 -528 -480 2 polygon
+1 1.000 -528 -384 -528 -256 2 polygon
+1.000 315 -528 -624 generic::arrow
+(5k multi) {/Times-Roman cf} 2 16 0 1.000 -496 -640 label
+(BF246C) {/Times-Roman cf} 2 16 0 1.000 -512 -432 label
+1.000 0 -528 -752 generic::dot
+{/Helvetica cf} 1 16 0 1.000 1888 -1472 label
+0 1.000 1632 -1376 1632 -1616 2672 -1616 2672 -1376 4 polygon
+0.000 0.000 0.000 scb
+1.000 0 1984 272 analog::gnd
+sce
+1 1.000 1984 272 1984 336 2 polygon
 pgsave restore showpage
 
 %%Trailer
