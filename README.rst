@@ -27,5 +27,5 @@ Results
 
 Realisations emitted very natural, detailed and transparent sound with nice deep bass using speakers as low as 90dB/W/m. Measures showed -74dB THD for 1/2W output and -65dB THD for 1W (H2 and H3) with matched tubes. Output can reach 13W with -40dB THD in 8Ω. 
     
-.. image:: http://public.coolkeums.org/github/soco2/amplifier.png
-
+.. image:: build/schematics/amplifier.png
+.. image:: build/schematics/psu.png
