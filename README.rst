@@ -23,8 +23,13 @@ The built_version
 ------------------
 
 The project was made on printed circuit board ( all files are included in Kicad folder )
-This version does not use the PNK, the 6S19P's CCS is decoupled and has zener protection that prevents slippage cathode voltage on the higer swing
+
+This version does not use the PNK,
+
+And the 6S19P's CCS is decoupled and has zener protection that prevents slippage cathode voltage on the higer swing
+
 Power is succinct and yet respects the constants time
+
 Local feedback of -1 dB, improve the damping factor
 
 .. image:: built_version/schematics/Soco2_built_amp.png
