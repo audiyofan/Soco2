@@ -1,0 +1,248 @@
+Cmp-Mod V01 Created by CvPCB (2011-05-25)-stable date = jeu. 02 août 2012 21:47:14 CEST
+
+BeginCmp
+TimeStamp = /50197F3E;
+Reference = C1;
+ValeurCmp = 1µ;
+IdModule  = CP_13x21mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198FFE;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = CPA_13x25MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /50199018;
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = CPA_13x25MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198FA2;
+Reference = C4;
+ValeurCmp = 220µ;
+IdModule  = CP_13x21mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198FB5;
+Reference = C5;
+ValeurCmp = 220µ;
+IdModule  = CP_13x21mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /501A0F53;
+Reference = D1;
+ValeurCmp = ZENER_6V2;
+IdModule  = D4;
+EndCmp
+
+BeginCmp
+TimeStamp = /5019A388;
+Reference = Q1;
+ValeurCmp = MJE340V;
+IdModule  = TO126V-ECB;
+EndCmp
+
+BeginCmp
+TimeStamp = /5019A37C;
+Reference = Q2;
+ValeurCmp = MJE340V;
+IdModule  = TO126V-ECB;
+EndCmp
+
+BeginCmp
+TimeStamp = /50199286;
+Reference = Q3;
+ValeurCmp = MPSA42;
+IdModule  = TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /501992A9;
+Reference = Q4;
+ValeurCmp = MPSA42;
+IdModule  = TO92-CBE;
+EndCmp
+
+BeginCmp
+TimeStamp = /501990E8;
+Reference = R1;
+ValeurCmp = 390;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198EDF;
+Reference = R2;
+ValeurCmp = 47K;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198EEA;
+Reference = R3;
+ValeurCmp = 1K;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50197F22;
+Reference = R4;
+ValeurCmp = 47K;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198EAA;
+Reference = R5;
+ValeurCmp = 100;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198ECF;
+Reference = R6;
+ValeurCmp = 100;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50199090;
+Reference = R7;
+ValeurCmp = 76K;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198E6A;
+Reference = R8;
+ValeurCmp = 47K;
+IdModule  = R6;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198E69;
+Reference = R9;
+ValeurCmp = 47K;
+IdModule  = R6;
+EndCmp
+
+BeginCmp
+TimeStamp = /50197F12;
+Reference = R10;
+ValeurCmp = 120K;
+IdModule  = R6;
+EndCmp
+
+BeginCmp
+TimeStamp = /50197F06;
+Reference = R11;
+ValeurCmp = 47K;
+IdModule  = R6;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198E3C;
+Reference = R12;
+ValeurCmp = 47K;
+IdModule  = R6;
+EndCmp
+
+BeginCmp
+TimeStamp = /50199041;
+Reference = R13;
+ValeurCmp = 220K;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50199055;
+Reference = R14;
+ValeurCmp = 220K;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198F88;
+Reference = R15;
+ValeurCmp = 150;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198F92;
+Reference = R16;
+ValeurCmp = 150;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198F62;
+Reference = R17;
+ValeurCmp = 82K;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /50198F80;
+Reference = R18;
+ValeurCmp = 82K;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /501AD533;
+Reference = R19;
+ValeurCmp = 10;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /501AD538;
+Reference = R20;
+ValeurCmp = 10;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /501990BF;
+Reference = U1;
+ValeurCmp = LM7905;
+IdModule  = LM79XX;
+EndCmp
+
+BeginCmp
+TimeStamp = /50197E58;
+Reference = U2;
+ValeurCmp = 6Z38P;
+IdModule  = VALVE-NOVAL_G;
+EndCmp
+
+BeginCmp
+TimeStamp = /50197E5E;
+Reference = U3;
+ValeurCmp = 6Z38P;
+IdModule  = VALVE-NOVAL_G;
+EndCmp
+
+BeginCmp
+TimeStamp = /50197E45;
+Reference = U4;
+ValeurCmp = 6S19P;
+IdModule  = VALVE-NOVAL_G;
+EndCmp
+
+BeginCmp
+TimeStamp = /50197E4B;
+Reference = U5;
+ValeurCmp = 6S19P;
+IdModule  = VALVE-NOVAL_G;
+EndCmp
+
+EndListe
