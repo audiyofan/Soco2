@@ -28,6 +28,7 @@ Power is succinct and yet respects the constants time
 Local feedback of -1 dB, improve the damping factor
 
 .. image:: built_version/schematics/Soco2_built_amp.png
+
 .. image:: built_version/schematics/Soco2_built_psu.png
 
 Warning
